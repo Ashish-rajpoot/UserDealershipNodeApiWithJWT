@@ -1,9 +1,7 @@
 const { MongoClient } = require('mongodb');
-const MONGODB_URI="mongodb+srv://ashish142:ashish142@cluster0.3abiu.mongodb.net/cardealership"
 const connectDB = async () => {
   try {
-    // const client = new MongoClient(process.env.MONGODB_URI, {
-    const client = new MongoClient(MONGODB_URI, {
+    const client = new MongoClient(process.env.MONGODB_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
